@@ -1,8 +1,8 @@
 # Docker Installationsanleitung (Übung)
-- Erstellen eines lokalen Multi-container clusters (https://ozone.apache.org/docs/1.0.0/start/startfromdockerhub.html)
+- Erstellen eines lokalen Multi-container clusters (https://ozone.apache.org/docs/edge/start/startfromdockerhub.html)
 
 - Optional zur Strukturierung: 
-	- Erstellen eines Ordners z.B. docker_test in dem später die Konfigurations- und Docker Compose Datei landet 
+	- Erstellen eines Ordners z.B. docker_ozone in dem später die Konfigurations- und Docker Compose Datei landet 
 	- Dieser Ordnername bestimmt den übergeordneten Namen der Docker Instanz
 
 - Terminal öffnen
@@ -67,16 +67,16 @@ docker-compose down -v
 ```
 
 # Installation Bare Metal 
-- https://ozone.apache.org/docs/1.0.0/start/fromsource.html
+- https://ozone.apache.org/docs/edge/start/onprem.html
 - Benötigte Komponenten: 
 	- Ozone Manager(OM)
 	- Storage Container Manager(SCM)
 	- Datanodes
 ## 1. Installation und Konfiguration
-- Auf allen Maschinen im Cluster: entpacke `ozone<version>'
+- Auf allen Maschinen im Cluster: entpacke `ozone<version>`
 - Generierung von **ozone-site.xml** mit `ozone genconf <path>`
 - Konfiguration von **ozone-site.xml**
-- Definition der Speicherorts der Metadaten (schnelle SSD)
+- Definition des Speicherorts der Metadaten (schnelle SSD)
 	- SCM und OM schreiben auf diesen Pfad.
 ```XML
 <property>

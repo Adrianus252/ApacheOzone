@@ -9,7 +9,7 @@ ozone sh <object> <operation> <--Parameter> /Pfad/Zu/Datei
 ozone sh bucket create --enforcegdpr=true /demo/bucketencr
 
 # Hilfe zu Befehlen
-# Objekte:volume, bucket, key, snapshot 
+# Objekte: volume, bucket, key, snapshot 
 # Operation: delete, create, list, put, info
 ozone sh <object> <operation> --help
 
@@ -265,7 +265,7 @@ f329fb2c-2513-4e17-92c6-6077f06ee657/RATIS/ONE/RATIS/OPEN/Leader
 docker exec -it <Containername> bash
 # z.B. docker exec -it docker_ozone-datanode-2 bash
 ```
- - oder gehe auf einen Datanode in Docker und wähle "Open in terminal"
+ - Oder gehe auf einen Datanode in Docker und wähle "Open in terminal"
 
 - Schau dir unter `/data/hdds` die Blöcken sowie Metadata an
 - Finde die physischen Blöcke der verschlüsselten und entschlüsselten Dateien
@@ -449,8 +449,8 @@ ozone sh volume info /demoqu
   "refCount" : 0
 }
 ```
-- erhöhe Anzahl Buckets im Volume auf 5 mit `setquota`
-- danach kann ein neues Bucket ohne Fehlermeldung erstellt werden
+- Erhöhe die Anzahl der Buckets im Volume auf 5 mit `setquota`
+- Danach kann ein neues Bucket ohne Fehlermeldung erstellt werden
 ```shell
 bin/ozone sh volume setquota --namespace-quota 10 /demoqu
 ```
